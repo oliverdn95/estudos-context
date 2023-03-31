@@ -1,5 +1,11 @@
+import { CompFilhoC } from "../CompFilhoC/CompFilhoC";
 import "./CompFilhoA.css";
 
-export function CompFilhoA() {
-  return <div className="filho-a"></div>;
+export function CompFilhoA(props) {
+  return (
+  <div className="filho-a">
+    <h4>FILHO A</h4>
+    <CompFilhoC />
+  </div>
+  );
 }
